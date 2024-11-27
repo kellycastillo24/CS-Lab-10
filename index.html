@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+       
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin-top: 20px;
+            background-color: aqua;
+        }
+    
+    </style>
 </head>
 <body>
 
@@ -16,24 +28,30 @@
 <P id="message"> </P>
 
 <!--question 3-->
-<input id="result">
-<input id="result">
-<button onclick="addedresult()"></button>
+<label for="num1"> Enter first number</label>
+<input type="number" id="num1" placeholder="Enter first number!">
+
+<label for="num2"> Enter second number</label>
+<input for="number" id="num2" placeholder="Enter second number">
+
+<button onclick="addNumbers()">Add</button>
+<div id="result" style="margin-top: 20px; font-weight: bold;"></div>
 
 <!--question 4-->
-<input id="insertinput">
-<button onclick="inputchange()"> Submit</button>
-<h1 id="title"></h1>
+<h1 id="title"> The Moon </h1>
+    <input type="text" id="inputField" placeholder="Enter new title">
+    <button id="updateButton">Click me!</button>
 
 <!--question 5 -->
-<input>
-<input>
-<button></button>
+    <input type="text" id="inputchange1" placeholder="Enter here">
+    <input type="text" id="inputchange2" placeholder="Enter here">
+    <button id="concatButton">Click here!</button>
+    <p id="combinedText">Result will show up here!</p>
+
 
 <!--question 6-->
-<div>
-    <!-- <button id=""></button> -->
-</div>
+<button id="changeColorButton">Click me to change Background!!</button>
+    <div id="colorBox"></div>
 
 
     <script src="javascript.js"></script>
